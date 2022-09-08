@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 # interface command
-class Ordem(metaclass=ABCMeta):
+class Processo(metaclass=ABCMeta):
 
     @abstractmethod
     def executar(self):
@@ -11,7 +11,7 @@ class Ordem(metaclass=ABCMeta):
 
 # comando concreto
 
-class MoldeRetangular(Ordem):
+class MoldeRetangular(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -19,7 +19,7 @@ class MoldeRetangular(Ordem):
     def executar(self):
         self.acao.molde_retangular()
 
-class TelaLed(Ordem):
+class TelaLed(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -27,7 +27,7 @@ class TelaLed(Ordem):
     def executar(self):
         self.acao.tela_led()
 
-class PainelControle(Ordem):
+class PainelControle(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -36,7 +36,7 @@ class PainelControle(Ordem):
         self.acao.painel_controle()
 
 
-class ParafusosInternos(Ordem):
+class ParafusosInternos(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -45,7 +45,7 @@ class ParafusosInternos(Ordem):
         self.acao.parafusos_internos()
 
 
-class Secador(Ordem):
+class Secador(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -54,7 +54,7 @@ class Secador(Ordem):
         self.acao.secador()
 
     
-class MoldeTrazeiro(Ordem):
+class MoldeTrazeiro(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -63,7 +63,7 @@ class MoldeTrazeiro(Ordem):
         self.acao.molde_trazeiro()
 
 
-class ParafusosExternos(Ordem):
+class ParafusosExternos(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -72,7 +72,7 @@ class ParafusosExternos(Ordem):
         self.acao.parafusos_externos()
 
     
-class Selo(Ordem):
+class Selo(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -81,7 +81,7 @@ class Selo(Ordem):
         self.acao.selo()
 
 
-class Teste(Ordem):
+class Teste(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -90,7 +90,7 @@ class Teste(Ordem):
         self.acao.teste()
 
 
-class Embalagem(Ordem):
+class Embalagem(Processo):
 
     def __init__(self, acao) -> None:
         self.acao = acao
@@ -153,7 +153,7 @@ class Invoker:
 class Fabrica:
     def criar_processo(self: object, processo: str, acao: object):
         return eval(processo)(acao)  
-        
+
 
 class Orchestrator:
 
