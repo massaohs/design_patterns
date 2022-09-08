@@ -1,8 +1,6 @@
 # gerenciador de eventos
 
 # façade
-from this import d
-
 
 class GerenciamentoEventos:
 
