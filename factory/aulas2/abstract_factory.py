@@ -1,6 +1,4 @@
 from abc import ABC, abstractmethod
-from random import choice
-
 
 class VeiculoLuxo(ABC):
     @abstractmethod
@@ -85,7 +83,7 @@ class VeiculoFactory(ABC):
 
 
 
-class ZonaSulVeiculoFactory(VeiculoFactory):
+class ZonaNorteVeiculoFactory(VeiculoFactory):
     
     @staticmethod
     def get_carro_luxo() -> VeiculoLuxo:
@@ -104,7 +102,7 @@ class ZonaSulVeiculoFactory(VeiculoFactory):
         return MotoPopularZN()
 
 
-class ZonaNorteVeiculoFactory(VeiculoFactory):
+class ZonaSulVeiculoFactory(VeiculoFactory):
     
     @staticmethod
     def get_carro_luxo() -> VeiculoLuxo:
