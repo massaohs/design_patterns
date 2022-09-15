@@ -7,7 +7,8 @@ if __name__ == '__main__':
     'Secador', 'MoldeTrazeiro', 'ParafusosExternos', 'Selo', 'Teste', 'Embalagem']
 
     amount_types_tvs = {
-        'TV32': 1
+        'TV32': 3,
+        'TV50': 2
     }
 
     orc = Orchestrator(processos, amount_types_tvs)
