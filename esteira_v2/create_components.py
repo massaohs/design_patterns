@@ -1,4 +1,3 @@
-from tv import TV32, TV50
 
 class CreateComponents:
 
@@ -22,6 +21,3 @@ class CreateComponents:
 
             selo = tv.get_selo()
             tv.selo = selo.create()
-
-        # print(tv32.molde)
-        # tv32.molde.pop()

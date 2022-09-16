@@ -36,6 +36,4 @@ class Orchestrator:
             for k in range(self.types_tv[type(tv).__name__]):
                 invoker.execucao_processos(tv)
 
-            print('############## -------------------------- ##############')
-
         print('\nPROCESSO DE MONTAGEM FINALIZADO!!!')

@@ -6,10 +6,10 @@ if __name__ == '__main__':
     processos = ['MoldeRetangular', 'TelaLed', 'PainelControle', 'ParafusosInternos',
     'Secador', 'MoldeTrazeiro', 'ParafusosExternos', 'Selo', 'Teste', 'Embalagem']
 
-    amount_types_tvs = {
-        'TV32': 3,
-        'TV50': 2
+    qtd_tipos = {
+        'TV32': 2,
+        'TV50': 1
     }
 
-    orc = Orchestrator(processos, amount_types_tvs)
+    orc = Orchestrator(processos, qtd_tipos)
     orc.run()
