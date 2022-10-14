@@ -26,10 +26,13 @@ class ProcessesUsed:
     def __init__(self, batch, list_processes) -> None:
         self.batch = batch
         self.list_processes = list_processes
+        self.list_run = list()
 
     def add_run_list(self):
-            return __MAP_PROCESSES_DICT__[self.list_processes](self.batch.components[self.list_processes])
+            self.list_run.append(__MAP_PROCESSES_DICT__[self.list_processes](self.batch.components[self.list_processes]))
 
-    # def get_started(self, command):
-    #     command.execute()
+    def get_started(self):
+        for command in self.list_run:
+            command.execute()
+        # self.list_run = list()
         
