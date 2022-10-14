@@ -1,0 +1,16 @@
+{
+    "SmartTV":{
+        "processes": ["FrontMold","Screen","Board", "Wifi", "InternalBolts","BackMold","ExternalBolts","Label","Tests","Package"]
+    },
+    "TVHD":{
+        "processes": ["FrontMold","Screen","Board","InternalBolts","BackMold","ExternalBolts","Label","Tests","Package"]
+    },
+    "TVFullHD":{
+        "processes": ["FrontMold","Screen","Board","InternalBolts","BackMold","ExternalBolts","Label","Tests","Package"]
+    },
+    "TV4k":{
+        "processes": ["FrontMold","Screen","Board","InternalBolts","BackMold","ExternalBolts","Label","Tests","Package"]
+    }
+   }
+   
+   

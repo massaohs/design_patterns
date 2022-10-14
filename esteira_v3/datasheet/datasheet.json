@@ -1,0 +1,18 @@
+{"assembly": [{
+      "type":"SmartTV",
+      "amount": 4
+    },
+    {
+        "type":"TVHD",
+        "amount": 2
+    },
+    {
+        "type":"TVFullHD",
+        "amount": 1
+    },
+    {
+        "type":"TV4k",
+        "amount": 2
+    }
+    ]
+}
