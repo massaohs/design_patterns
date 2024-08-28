@@ -11,7 +11,7 @@ class Orchestrator:
         self.list_execution = list()
 
     def show_batch(self, amount, type_tv):
-        print(f"\n------------####### Montagem de {amount} {type_tv} #######------------\n")
+        print(f"\n------------####### Montagem de {amount} {type_tv} test #######------------\n")
 
     def running_machine(self):
 
